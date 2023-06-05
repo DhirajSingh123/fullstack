@@ -1,0 +1,56 @@
+a:hover{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+#header{
+    color: #fff;
+    background: #e74c3c;
+}
+#logo{
+    font-size: 2rem;
+    margin-top: 5px;
+}
+
+#menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+#menu li{
+    display: inline-block;
+}
+
+#menu li a{
+    color: #fff;
+    padding: 15px 10px;
+    display: block;
+}
+#menu li a:hover{
+    color: #fff;
+    background: #c0392b; 
+    padding: 15px 10px;
+    display: block;
+}
+#banner{
+    background: url('../asset/pawan-thapa-AXB3kLhUDY8-unsplash.jpg') no-repeat 0 0;
+    background-size: cover;
+}
+#banner-title{
+    padding-top:3rem;
+    
+}
+#banner-title h1{
+    background: rgba(255,255,255,0.8);
+    display: inline-block;
+    padding: 10px;
+    margin: 0px;
+
+}
+#banner-title p.lead{
+    color: #fff;
+    background: rgba(231,76,60,0.7);
+    padding: 5px;
+
+}

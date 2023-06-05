@@ -1,0 +1,34 @@
+<html>
+  <body>
+    <h1>hello</h1>
+    <script>
+    //   example 1 for catch
+      function testasyncAndpromiseforcatch() {
+        let promisefunc = new Promise((resolve, reject) => {
+          throw new Error("Uh-oh!");
+        })
+          .then(() => {
+            console.log("then promise");
+          })
+          .catch(() => {
+           
+            console.log("catch handling");
+          });
+      }
+
+      console.log(testasyncAndpromiseforcatch());
+
+      ///2ndExample for then
+      async function testasyncAndpromiseForThen() {
+        let promisefunc = new Promise((resolve, reject) => {
+          setTimeout(() => {
+            resolve("All Done");
+          }, 3000);
+        });
+        console.log(await promisefunc);
+      }
+
+      console.log(testasyncAndpromiseForThen());
+    </script>
+  </body>
+</html>

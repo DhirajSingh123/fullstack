@@ -1,0 +1,166 @@
+
+Q.> filter employees whose age greater than 15 and store only ids
+
+Employee{
+  int id;
+  String name;
+  int age;
+  Department dep;
+}
+
+
+ArrayList<Employee> list = new aArrayList<>();
+
+ArrayList<Integer> ansList = list.stream().filter(s -> s.getAge()>15).map(s -> s.getId()).collect(Collectors.list());
+
+==============================================================================
+Q.> Functional Interface (Optional functional interface)-
+Department{
+  int id;
+  String name;
+}
+
+Employee e = new Employee();
+Optional o = e.ofNullable().getDepartment().getId();
+======================================================================================
+
+Q.> Print hello using new thread (asked to use functional interface)
+
+Class Hello {
+     Thread t  = new Thread(()-> System.out.println("Helloo World"));
+            }
+
+t.start();
+==================================
+
+Q.> Questional related to dependency injection and cyclic dependency.
+
+@Component
+Class A{
+  
+ 
+  B b ;
+  
+@Autowired
+public A(B b){
+ this.b = b;
+}
+}
+
+
+
+
+@Component
+Class B{
+  A a ;
+  
+@Autowired
+public B(A a){
+ this.a = a;
+}
+}
+=============================================
+
+Q.> Develop REST API given was service class
+
+@Service
+EmployeeService{
+   Employee getEMployee(int id){
+   }
+   void saveEmployee(Employee e){
+   }
+}
+
+
+
+@Controller
+EmployeeController{
+   @Autowired
+   EmployeeService es;
+   
+   @GetMapping("/{id}")
+   public Employee get_Employee(@PathVariable{"id"} int id){
+        return es.getEmployee(id);
+  }
+
+   @PostMapping("/")
+   public Employee save_Employee(@RequestBody Employee e){
+        return es.saveEmployee(e);
+  }
+}
+============================================================
+
+Q.> DSA questions
+String str = "(({]){"
+
+sample --> s1 = "(){[]}"
+           s2 = "{)}("
+
+public boolean isValid(String str){
+ 
+   Stack<Character> st = new Stack<>();
+   for(Char ch : str){
+       if(ch == '(' || ch == '{' || ch == '['){
+           st.push(ch);
+       }
+       else{
+           char t = st.peek();
+           if((t == ')' && ch != '(') || (t == '}' && ch != '{') || (t == ']' && ch != '[')){
+               return false;
+           }
+           else{
+               st.pop();
+           }
+
+      }
+   }
+   if(st.isEmpty()){
+     return true;
+   }
+   else return false;
+}
+
+
+======================================================================
+
+Q.> SQL query to find employee who also manager
+
+Employee --> id, name, manager id , city
+
+
+121 john 321 mumbai
+321 abc  986 delhi
+
+SELECT e.name
+FROM Employee e
+INNER JOIN Employee s
+ON e.id == s.managerID;
+
+====================================================
+
+Q.> find project wise count of employees
+
+EMployee --> id , project, salary
+project wise count of employee
+
+SELECT COUNT(id), project
+FROM emplyee e
+GROUP BY project
+
+==============================================================
+
+
+
+
+
+
+          
+
+       
+
+
+
+
+   
+
+   

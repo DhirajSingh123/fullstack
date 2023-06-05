@@ -1,0 +1,19 @@
+1. ask about project.
+2. ORM 
+3. JOINS and INDEX
+
+4. Given an Employee table which has empId,empName,deptId and salary. 
+	
+	and a Department table with departmentID/departmentName.
+		print department wise budget.( budget is sum of all employee salary of the department).
+	
+5.Inner join
+6. How index is implemented internally?
+7. Which Data structure is used?
+8. In a table, we are getting query related to 2 particular field very frequently. how to optimize the query processing in this scenario.?
+9. if we have 3 index created in table. how many Data Structure will it require?
+10. Simulate the Table and indexing using a data structure in a java class.
+11. PolyMorphism (Method overloading and Method Overriding)
+12. Functional INterface.
+14. When should we use interface and abstract class.
+15. initialization blocks

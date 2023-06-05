@@ -1,0 +1,10 @@
+{
+  "simulation": "testusingjavagatling",
+  "simulationId": "testusingjavagatling-20221117184725671",
+  "start": 1668710847733,
+  "description": "",
+  "scenarios": ["testusingjavagatling"],
+  "assertions": [
+
+  ]
+}

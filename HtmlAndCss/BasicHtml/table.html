@@ -1,0 +1,87 @@
+<html>
+  <head>
+    
+  </head>
+  <body>
+
+    <h1 id="head1"></h1>
+    <table id="table" border="1">
+      
+    </table>
+
+    
+
+
+    <script>
+        var userData = [
+            {
+              sub: false,
+              _id: "620341065c15f6f1b9e9750f",
+              name: "Dhiraj",
+              tech: "java",
+            },
+            {
+              _id: "6203464c4887a2cd22bd888a",
+              name: "ABCD",
+              tech: "java",
+              sub: true,
+              __v: 0,
+            },
+            {
+              _id: "62038926bcc5d37acde79505",
+              name: "manne",
+              tech: "nodejs",
+              sub: false,
+              __v: 0,
+            },
+            {
+              _id: "620bd7ff14cedb14888ca2e9",
+              name: "golu",
+              tech: "nodejs",
+              sub: false,
+              __v: 0,
+            },
+          ],
+          table = document.getElementById("table");
+  
+        // arr.forEach(element => {
+  
+        // });
+        let tableRow=`<tr>
+        <th>Name</th>
+        <th>Tech</th>
+        <th>subscriber</th>
+      </tr>`;
+        for (let index = 0; index < userData.length; index++) {
+          const user = userData[index];
+  
+          //template srting we created
+           tableRow  +=`
+  
+              <tr>
+          <td>${user.name}</td>
+          <td>${user.tech}</td>
+          <td>${user.sub ? "subscribed" : "unsubscribed"}</td>
+        </tr>
+              
+              `;
+              
+        
+        }
+        table.innerHTML=tableRow;
+
+
+
+   //
+   const head1=document.getElementById("head1");
+   //head1.innerHTML="Dhiraj Singh";
+   head1.innerText="sfdsdfhsjk";
+
+     const para=document.createElement("h6").innerHTML="Ankit yadav";
+
+    head1.innerHTML=para;
+
+
+      </script>
+  </body>
+</html>

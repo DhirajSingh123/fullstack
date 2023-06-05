@@ -1,0 +1,35 @@
+<html>
+    <head>
+        
+        <title>employee information</title>
+    </head>
+   
+    <body>
+
+        <form onsubmit="getData(event)">
+            <label>Employee Name</label><br>
+            <input type="text" placeholder="Enter name" id="name"  required/><br/>
+            <label>Technical Skill</label><br>
+            <input type="text" placeholder="tech" id="tech" required/><br>
+
+            <label>Subscriper Employee</label><br>
+            <input type="radio" name="subscriber" value="yes"  checked> <label>Yes</label><br/>
+            <input type="radio" name="subscriber" value="no" > <label>No</label><br/>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+
+        </form>
+
+        <br/>
+        <br/>
+
+
+        <button type="submit" onclick="setData()">show</button>
+        
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.0/axios.js"></script>
+        <script src="emp.js"></script>
+   
+    </body>
+   
+</html>

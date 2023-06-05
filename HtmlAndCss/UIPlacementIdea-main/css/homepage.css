@@ -1,0 +1,35 @@
+body {
+    background-color: yellowgreen;
+  }
+
+  .heading{
+      width: 600px;
+      height: 100px;
+      background-color: red;
+      font-family:  Georgia; 
+      font-size: 30px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  .center {
+    background: #FF7A59;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 60px;
+    font-size: 30px;
+  }
+  .t1{
+    
+        border-collapse: separate;
+        border-spacing: 2em;
+    
+  }
+
+  
+
+p {text-align: center;}

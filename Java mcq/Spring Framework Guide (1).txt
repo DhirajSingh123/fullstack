@@ -1,0 +1,120 @@
+Spring Framework Guide
+----------------------
+
+Spring Core
+	IoC container Beans
+		BeanPostProcessor
+		PropertySourcesPlaceholderConfigurer
+	Different ways of creating Application Context
+		XML based configuration
+		Annotation based configuration
+		Java based configuration
+		@Configuration
+		@Bean
+		@Import
+		@DependsOn
+	How to initialize a container?
+	Spring Beans
+		Instantiating beans
+			@Primary
+			@Resource
+			@Value
+		Stereotype Annotations
+			@Component
+			@Repository
+			@Component
+			@Service
+			@Controller
+		Naming beans
+		Beans scope
+			singelton
+			prototype
+			request
+			session
+			application
+			websocket
+		Dependency Injection
+			Constructor based
+			Property based
+		Autowring mode
+			@Autowired
+			@Qualifier
+		Lazy Initialization mode
+		Life cycle methods
+			Initialization callback
+			Destruction callback
+			InitializingBean(I)
+			DisposableBean(I)
+			@PostConstruct
+			@PreDestroy
+			Shutting Down the Spring IoC Container Gracefully in Non-Web Applications
+			ApplicationContextAware
+			BeanNameAware
+		
+
+Spring AOP
+	Basic Terms
+		Aspect
+		Join Point
+		Advice
+		Pointcut
+		APO proxy
+		Target Object(advised object)
+		Weaving
+	Types of Advice
+		Before advice
+		After returning advice
+		After throwing advice
+		After (finally) advice
+		Around advice
+	How to enable @AspectJ Support?
+	How to declare an Aspect? @Aspect
+		@Before
+		@After
+		@AfterReturning
+		@AfterThrowing
+		@Around
+	How to declare a pointcut?
+		Supported Pointcut Designators
+			execution
+			within
+			this
+			target
+			args
+			@target
+			@args
+			@within
+			@annotation
+
+
+Hibernate a JPA provider
+	EntityManager
+	EntityManagerFactory
+	EntityTransaction
+	Domain Model
+		Type ( mapping a Java type to SQL type)
+		@Entity
+		@Id
+		@Embeddable
+		@Column
+		Enum conversion
+			@Enumerated
+		Boolean conversion into Y or N or some other using @Convert
+		Date and Time conversion new, java 8 classes
+		UUID conversion
+		Advanced
+			@Formula
+			@Convert
+			@Converter
+			@Lob
+
+
+Spring Data JPA
+	Centeral interface Repository
+		CrudRepostory
+		ListCrudRepository
+		PaginationAndSortingRepository
+	@NoRepositoryBean
+
+
+Spring Web

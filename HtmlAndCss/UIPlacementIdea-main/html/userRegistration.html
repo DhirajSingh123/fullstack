@@ -1,0 +1,42 @@
+<html>
+    <header>
+        <title>HTML Elements Reference</title>
+
+        <link rel="stylesheet" href="../css/home.css">
+    </header>
+    <body>
+        <h1 id="topheading"><i>Placment Idia</i></h1>
+
+        <div>
+            <form onsubmit="addUser(event)">
+                <label>User Name</label></br>
+                <input type="text" id="userName" placeholder="User Name"/>
+            </br>
+            <label>Email Id</label></br>
+            <input type="text" id="email" placeholder="Email Id"/>
+        </br>
+      
+                <label>Phone No</label>
+            </br>
+                <input type="number" id="phoneNo" placeholder="Phone no"/>
+        </br>
+
+                <label>Password</label>
+            </br>
+                <input type="text" id="password" placeholder="Password"/>
+                <br>
+                <label>Confirm Password</label>
+            </br>
+                <input type="password" id="confirmPassword" placeholder="Confirm Password"/>
+        </br>
+
+                
+                <input type="Submit" id="Registarrtion"/>
+                <button type="button" onclick="window.location.href='signup.html'">Log In</button>
+               
+            </form>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.0/axios.js"></script>
+        <script src="/js/registration.js"></script>
+    </body>
+</html>

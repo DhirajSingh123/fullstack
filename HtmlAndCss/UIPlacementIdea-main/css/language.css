@@ -1,0 +1,28 @@
+*{
+    margin:0;padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100%; margin: 10px auto;
+    border: 5px solid green;
+    display: grid;
+    grid-template-rows:80px 520px;
+    grid-template-columns:repeat(2,1fr) 350px;
+}
+.div1{
+    background-color: yellow;
+    grid-column: 1/-1;
+}
+.div2{
+    background-color: pink;
+  
+}
+#div3{
+    background-color: blue;
+   
+}
+.div4{
+    background-color: blueviolet;
+}
+

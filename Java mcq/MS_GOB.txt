@@ -1,0 +1,92 @@
+class A{
+
+
+public void add(int a, int b){
+
+}
+
+public void add(Integer a, Integr b){
+
+}
+
+public void add(long a, long b){
+	
+}
+
+public void add(Long a, Long b){
+
+}
+
+A a = new A();
+
+a.add(10,20);
+//which add method will be called?
+
+}
+
+interface adder{
+	public default int add(int a, int b){
+		return a+b;
+	}
+}
+
+interface subtract {
+	public default int add(int a, int b){
+		return Adder.super.add(a,b);
+	}
+}
+
+class M implements adder, sustract{
+	
+}
+
+class N {
+	
+	psvm{
+		M m = new M();
+		m.add(10,20);
+		//what will be the output?
+		// how will you resolve error?
+	}
+}
+
+List<Employee> employees  
+
+EMployee -- empId,name, sal,city
+
+filter empolyee from employess which are living in mumbai
+
+employees.stream().filter(e ->{ e.getCity().equals("Mumbai")}).collect(Collectors.toList());
+
+
+
+
+
+
+Rest
+	Rest API - different Exception - how to handle exception in Rest.
+	
+Implement Singleton
+
+
+what is index -
+
+triggers - 
+
+
+employee - empId, empName, empSalary 
+
+manager - managerId, managerName, empId, managerSal
+
+
+manager -> whos employee has highest salary
+
+
+select managerName from manager
+	where empId = {
+		select empId 
+		from employee
+		where empSalary = max(empSalary);
+	
+	
+Coding question - Rotate a matrix by 90 degree in clock wise direction

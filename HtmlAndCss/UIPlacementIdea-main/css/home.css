@@ -1,0 +1,24 @@
+body {
+    background-color: yellowgreen;
+  }
+
+  #topheading{
+      color:blue;
+      text-align:center;
+      
+
+  }
+
+  div {
+      /* color: #000;
+    height: 200px;
+    width: 30%;
+    background-color: powderblue; */
+    margin-left: auto;
+    margin-right: auto;
+    /* margin: 50px; */
+  width: 30%;
+  border: 3px solid green;
+  /* padding: 10px; */
+ background:gray;
+  }
